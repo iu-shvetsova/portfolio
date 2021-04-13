@@ -30,6 +30,10 @@
       padding-top: 40px;
     }
 
+    @media (max-width: 375px) {
+      padding-top: 10px;
+    }
+
     &::after,
     &::before {
       content: "";
@@ -46,10 +50,10 @@
       left: 8%;
 
       @media (max-width: 375px) {
-        width: 200px;
-        height: 155px;
-        top: 23%;
-        left: -21%;
+        width: 124px;
+        height: 128px;
+        top: 26%;
+        left: -17%;
       }
     }
 
@@ -67,7 +71,8 @@
       }
 
       @media (max-width: 600px) {
-        right: -35%;
+        top: 22%;
+        right: -48%;
       }
     }
   }
@@ -83,6 +88,9 @@
     }
 
     @media (max-width: 375px) {
+      position: fixed;
+      right: 0;
+      top: 5%;
     }
   }
 
@@ -141,9 +149,8 @@
     }
 
     @media (max-width: 375px) {
-      width: 100%;
+      width: 80%;
       height: 100%;
-      // transform: translateY(-29%);
     }
   }
 
@@ -220,10 +227,11 @@
     }
 
     @media (max-width: 600px) {
-      margin-left: 20px;
+      margin-left: 15px;
       width: auto;
       font-size: 38px;
       line-height: 41px;
+      margin-bottom: 30px;
     }
   }
 
@@ -251,13 +259,13 @@
     }
 
     @media (max-width: 600px) {
-      margin-left: calc(20px + 20px);
+      margin-left: calc(15px + 20px);
       font-size: 16px;
       line-height: 19px;
     }
 
     @media (max-width: 375px) {
-      margin-bottom: 100px;
+      margin-bottom: 49px;
     }
 
     &::before {
@@ -274,6 +282,10 @@
       @media (max-width: 600px) {
         width: 208px;
       }
+
+      @media (max-width: 375px) {
+        height: 33px;
+      }
     }
 
     &::after {
@@ -287,6 +299,13 @@
       background-image: url(/img/lattice.svg);
       background-repeat: no-repeat;
       background-size: contain;
+
+      @media (max-width: 375px) {
+        width: 31px;
+        height: 31px;
+        left: -23px;
+        top: -7px;
+      }
     }
   }
 
@@ -392,7 +411,7 @@
     @media (max-width: 375px) {
       position: absolute;
       right: 0;
-      top: 46%;
+      top: 28%;
     }
 
     &::after,
