@@ -1,0 +1,141 @@
+.needs {
+  &__want {
+    background: linear-gradient(
+        325.66deg,
+        rgba(224, 245, 216, 0.5) 2.88%,
+        rgba(224, 245, 216, 0.045) 89.14%
+      ),
+      #7c90dd;
+  }
+
+  &__wrap {
+    padding-top: 35px;
+    padding-left: 100px;
+    padding-right: 430px;
+    padding-bottom: 84px;
+  }
+
+  &__want-title {
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 79px;
+    color: #fff;
+    margin-bottom: 46px;
+  }
+
+  &__want-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  &__want-item {
+    padding: 4px 5px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #434758;
+    background-color: #e0f5d8;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__want-text {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+  }
+
+  &__want-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  &__want-subtitle {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    margin-right: 55px;
+    text-transform: uppercase;
+  }
+
+  &__can {
+    background: radial-gradient(
+        39.9% 140.36% at 84.41% -71.43%,
+        #7c90dd 0%,
+        rgba(124, 144, 221, 0) 100%
+      ),
+      #434758;
+  }
+
+  &__can-wrap {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 320px;
+    padding-bottom: 30px;
+  }
+
+  &__can-title {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__can-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: calc(40px + 11px);
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;
+  }
+
+  &__can-item {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ced8ff;
+  }
+
+  &__can-btn {
+    padding: 11px 41px;
+    background: #fff;
+    border: 1px solid #ced8ff;
+    border-radius: 8px;
+    color: #434758;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
