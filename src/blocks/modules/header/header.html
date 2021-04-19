@@ -1,26 +1,75 @@
 <header class="header">
   <div class="header__wrap">
     <nav class="header__nav">
-      <button class="header__burger" type="button" aria-label="Открыть меню">
-      </button>
+      <button
+        class="header__burger"
+        type="button"
+        aria-label="Открыть меню"
+      ></button>
+      <div class="header__nav-wrap">
+        <!-- <div class="header__nav-wrap_opened"> -->
+        <button
+          class="header__nav-btn"
+          type="button"
+          aria-label="Закрыть меню"
+        ></button>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Ваши задачи</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Мои решения</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">О вас</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Обо мне</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Услуги</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">FAQ</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Оставить заявку</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="header__main">
       <div class="header__about">
-        <img class="header__photo" src="/img/photo.png">
+        <div class="header__img-container">
+          <img class="header__photo" src="/img/photo.png" alt="Logo" />
+        </div>
         <p class="header__about-name header__name">Юлия Швецова</p>
-        <p class="header__about-profession header__profession">front-end разработчик</p>
+        <p class="header__about-profession header__profession">
+          front-end разработчик
+        </p>
       </div>
       <div class="header__info">
-        <h1 class="header__info-title">Разработка сайта для&nbsp;ваших задач</h1>
+        <h1 class="header__info-title">
+          Разработка сайта для&nbsp; ваших задач
+        </h1>
         <p class="header__info-slogan">без приключений</p>
         <p class="header__info-name header__name">Юлия Швецова</p>
-        <p class="header__info-profession header__profession">front-end разработчик</p>
+        <p class="header__info-profession header__profession">
+          front-end разработчик
+        </p>
         <div class="header__links-wrap">
-          <a class="header__info-application application-btn application-btn_blue" href="#">Оставить заявку</a>
+          <a
+            class="header__info-application application-btn application-btn_blue"
+            href="#"
+            >Оставить заявку</a
+          >
           <a class="header__info-works" href="#">Смотреть работы</a>
         </div>
-        <p class="header__info-scroll">scroll</p>
       </div>
     </div>
   </div>
+  <p class="header__scroll">scroll</p>
 </header>
