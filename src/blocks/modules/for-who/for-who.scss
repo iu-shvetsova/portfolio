@@ -1,7 +1,6 @@
 .for-who {
   $root: &;
   position: relative;
-  overflow: hidden;
 
   &::after {
     content: "";

@@ -1,0 +1,162 @@
+.services {
+  font-family: Montserrat;
+  background: radial-gradient(
+      135.31% 135.31% at 19.38% 143.57%,
+      #7c90dd 0%,
+      rgba(67, 71, 88, 0) 100%
+    ),
+    #434758;
+
+  &__wrap {
+    padding-top: 40px;
+    padding-bottom: 97px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    // grid-column-gap: 40px;
+    justify-content: space-between;
+    max-width: 930px;
+    margin: 0 auto;
+    margin-bottom: 83px;
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  &__title-wrap {
+    height: 65px;
+    width: 234px;
+    background: #ffffff;
+    box-shadow: 0px 32px 71px rgba(180, 176, 255, 0.5);
+    border-radius: 8px;
+    margin-bottom: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  &__list-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #7c90dd;
+    margin: 0;
+  }
+
+  &__sublist {
+    list-style: none;
+    // background: radial-gradient(
+    //     123.38% 58.21% at -54.38% 125.59%,
+    //     rgba(255, 255, 255, 0.2) 0%,
+    //     rgba(255, 255, 255, 0) 100%
+    //   ),
+    //   rgba(206, 216, 255, 0.2);
+    background-image: url(/img/services-mask.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(14px);
+    border-radius: 10px;
+    padding-left: 22px;
+    padding-top: 50px;
+    height: 367px;
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+  }
+
+  &__subitem {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+  }
+
+  &__price {
+    font-family: Montserrat;
+    font-size: 25px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 26px 43px 15px 43px;
+    background: linear-gradient(172deg, #ced8ff 26.48%, #7c90dd 153.96%),
+      #ced8ff;
+    border-radius: 8px;
+    margin: 0;
+
+    &_bold {
+      font-size: 36px;
+      line-height: 39px;
+      font-weight: 700;
+    }
+  }
+
+  &__footnote {
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  &__button {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+    color: #434758;
+    text-decoration: none;
+    padding: 10px 265px;
+    background-color: #fff;
+    align-self: center;
+    border: 1px solid #ced8ff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: color 0.2s ease, background 0.2s ease;
+    position: relative;
+
+    &:hover {
+      color: #fff;
+      background: linear-gradient(
+          108.82deg,
+          rgba(206, 216, 255, 0.5) 0.26%,
+          rgba(124, 144, 221, 0.5) 55.14%
+        ),
+        #ced8ff;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      width: 40%;
+      height: 1px;
+      background-color: #ced8ff;
+      position: absolute;
+      top: 50%;
+    }
+
+    &::after {
+      left: 100%;
+    }
+
+    &::before {
+      right: 100%;
+    }
+  }
+}

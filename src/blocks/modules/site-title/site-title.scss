@@ -1,0 +1,15 @@
+.site-title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 40px;
+  color: #434758;
+
+  &_white {
+    color: #fff;
+  }
+
+  &_green {
+    color: #208359;
+  }
+}
