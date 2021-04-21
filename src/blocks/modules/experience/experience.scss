@@ -230,7 +230,7 @@
       padding-left: 30px;
       padding-right: 30px;
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 60px;
+      column-gap: 60px;
     }
 
     @media (max-width: 600px) {

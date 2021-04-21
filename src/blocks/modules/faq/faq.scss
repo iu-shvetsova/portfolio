@@ -1,0 +1,241 @@
+.faq {
+  $root: &;
+  background: radial-gradient(
+      78.59% 207% at 94.97% 100%,
+      #a7df9d 0%,
+      rgba(224, 245, 216, 0) 100%
+    ),
+    #e0f5d8;
+  padding-top: 43px;
+
+  &__title {
+    padding: 10px 100px;
+    width: fit-content;
+    background-color: #208359;
+    box-shadow: 0px 0px 40px rgba(32, 131, 89, 0.5);
+    margin-bottom: 37px;
+
+    @media (max-width: 500px) {
+      padding: 9px 60px 9px 12px;
+      margin-bottom: 70px;
+    }
+  }
+
+  &__wrap {
+    padding-right: 100px;
+    padding-bottom: 102px;
+
+    @media (max-width: 450px) {
+      padding-bottom: 56px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin-bottom: 60px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      right: 10%;
+      top: 140%;
+      background-image: url(/img/faq-circle.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (max-width: 450px) {
+        top: 10%;
+      }
+    }
+  }
+
+  &__item {
+    font-family: Montserrat;
+    width: 100%;
+  }
+
+  &__question {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    padding: 10px 75px 18px 120px;
+    width: 100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+
+    @media (max-width: 450px) {
+      padding: 20px 75px 20px 20px;
+      margin-top: 40px;
+    }
+
+    &::before {
+      content: "вопрос";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 29px;
+      color: #ced8ff;
+
+      @media (max-width: 450px) {
+        bottom: 95%;
+        color: #208359;
+        opacity: 0.5;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 27%;
+      right: 40px;
+      width: 26px;
+      height: 26px;
+      transition: transform 0.3s ease;
+      transform: rotate(180deg);
+      background-image: url(/img/arrow-up-green.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &_opened {
+      font-weight: 400;
+      margin-bottom: 0;
+
+      &::before {
+        color: #e0f5d8;
+
+        @media (max-width: 450px) {
+          opacity: 1;
+        }
+      }
+
+      &::after {
+        transform: rotate(0deg);
+      }
+
+      & + #{$root}__answer {
+        display: block;
+      }
+    }
+  }
+
+  &__answer {
+    display: none;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 30px 100px 40px 105px;
+    background-color: #208359;
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative;
+
+    @media (max-width: 450px) {
+      padding: 14px 20px 18px 20px;
+      margin-bottom: 40px;
+    }
+
+    &::before {
+      content: "ответ";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      font-weight: 900;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 29px;
+      color: #ffffff;
+    }
+  }
+
+  &__slogan,
+  &__subtitle,
+  &__promise {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  &__slogan,
+  &__promise {
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__slogan {
+    color: #000000;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0 25px;
+    width: fit-content;
+    position: relative;
+
+    @media (max-width: 450px) {
+      margin-bottom: 40px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: #7c90dd;
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+
+      @media (max-width: 800px) {
+        top: 25%;
+      }
+    }
+
+    &::after {
+      left: 100%;
+
+      @media (max-width: 800px) {
+        left: 95%;
+      }
+    }
+
+    &::before {
+      right: 100%;
+
+      @media (max-width: 800px) {
+        right: 95%;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #208359;
+    margin-bottom: 0;
+
+    @media (max-width: 450px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__promise {
+    color: #434758;
+    margin-bottom: 0;
+  }
+}

@@ -1,5 +1,6 @@
 .services {
   font-family: Montserrat;
+  position: relative;
   background: radial-gradient(
       135.31% 135.31% at 19.38% 143.57%,
       #7c90dd 0%,
@@ -7,11 +8,48 @@
     ),
     #434758;
 
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::before {
+    background-image: url(/img/services-circle-big.png);
+    width: 300px;
+    height: 300px;
+    bottom: 100px;
+    right: -65px;
+  }
+
+  &::after {
+    background-image: url(/img/services-circle-small.png);
+    width: 100px;
+    height: 100px;
+    top: 140px;
+    left: 50px;
+
+    @media (max-width: 400px) {
+      width: 250px;
+      height: 250px;
+      top: 200px;
+      right: -50px;
+      left: auto;
+    }
+  }
+
   &__wrap {
     padding-top: 40px;
     padding-bottom: 97px;
     display: flex;
     flex-direction: column;
+    padding-right: 100px;
+
+    @media (max-width: 400px) {
+      padding-bottom: 40px;
+    }
   }
 
   &__title {
@@ -22,12 +60,40 @@
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 280px);
-    // grid-column-gap: 40px;
     justify-content: space-between;
     max-width: 930px;
     margin: 0 auto;
     margin-bottom: 83px;
     width: 100%;
+    position: relative;
+
+    @media (max-width: 950px) {
+      grid-template-columns: repeat(2, 280px);
+      justify-content: center;
+      column-gap: 40px;
+      row-gap: 40px;
+    }
+
+    @media (max-width: 650px) {
+      grid-template-columns: repeat(1, 280px);
+    }
+
+    &::after {
+      content: "";
+      width: 200px;
+      height: 200px;
+      background-image: url(/img/services-circle-middle.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 45%;
+      left: 22%;
+
+      @media (max-width: 400px) {
+        left: -50px;
+        transform: rotate(300deg);
+      }
+    }
   }
 
   &__item {
@@ -73,6 +139,7 @@
     backdrop-filter: blur(14px);
     border-radius: 10px;
     padding-left: 22px;
+    padding-right: 22px;
     padding-top: 50px;
     height: 367px;
     position: absolute;
@@ -119,7 +186,7 @@
   &__button {
     font-weight: bold;
     font-size: 24px;
-    line-height: 120%;
+    line-height: 28px;
     color: #434758;
     text-decoration: none;
     padding: 10px 265px;
@@ -130,6 +197,12 @@
     border-radius: 5px;
     transition: color 0.2s ease, background 0.2s ease;
     position: relative;
+
+    @media (max-width: 730px) {
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
 
     &:hover {
       color: #fff;
@@ -149,6 +222,14 @@
       background-color: #ced8ff;
       position: absolute;
       top: 50%;
+
+      @media (max-width: 1250px) {
+        width: 20%;
+      }
+
+      @media (max-width: 950px) {
+        width: 0;
+      }
     }
 
     &::after {

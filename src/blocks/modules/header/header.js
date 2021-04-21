@@ -17,6 +17,7 @@ if (header) {
 
   openButton.addEventListener("click", () => {
     navWrapper.classList.add("header__nav-wrap_opened");
+    document.addEventListener("click", onWindowClick);
   });
 
   closeButton.addEventListener("click", (event) => {

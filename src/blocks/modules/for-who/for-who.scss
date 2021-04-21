@@ -147,7 +147,7 @@
         width: 26px;
         height: 26px;
         transform: translateY(-25%);
-        transition: transform 0.3s;
+        transition: transform 0.3s ease;
         background-image: url(/img/arrow-down.svg);
         background-repeat: no-repeat;
         background-size: contain;
@@ -156,6 +156,7 @@
       &_opened {
         background-color: #fff;
         color: #434758;
+
         &::after {
           transform: translateY(-50%);
           background-image: url(/img/arrow-up-green.svg);
