@@ -66,11 +66,9 @@
   }
 
   &__title {
-    font-family: Montserrat;
     font-weight: 700;
     font-size: 36px;
     line-height: 39px;
-    color: #434758;
     margin-top: 0;
     margin-bottom: 27px;
     width: 45%;
@@ -121,10 +119,7 @@
   }
 
   &__subtitle {
-    font-family: Montserrat;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
     text-transform: uppercase;
     color: #ffffff;
     padding: 20px 0 20px 12px;
@@ -155,7 +150,7 @@
 
       &_opened {
         background-color: #fff;
-        color: #434758;
+        color: inherit;
 
         &::after {
           transform: translateY(-50%);
@@ -183,10 +178,8 @@
 
   &__subitem {
     position: relative;
-    font-family: Montserrat;
     font-size: 16px;
     line-height: 19px;
-    color: #434758;
     padding-left: 45px;
     margin-bottom: 10px;
 

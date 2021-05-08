@@ -34,6 +34,7 @@
     list-style: none;
     margin-bottom: 60px;
     position: relative;
+    max-width: 1400px;
 
     &::before {
       content: "";
@@ -54,14 +55,12 @@
   }
 
   &__item {
-    font-family: Montserrat;
     width: 100%;
   }
 
   &__question {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+
     color: #000000;
     padding: 10px 75px 18px 120px;
     width: 100%;
@@ -134,8 +133,7 @@
   &__answer {
     display: none;
     font-style: italic;
-    font-size: 14px;
-    line-height: 18px;
+
     font-weight: 300;
     color: #ffffff;
     padding: 30px 100px 40px 105px;
@@ -171,7 +169,6 @@
 
   &__slogan,
   &__promise {
-    font-family: Montserrat;
     font-size: 16px;
     line-height: 19px;
   }
@@ -235,7 +232,6 @@
   }
 
   &__promise {
-    color: #434758;
     margin-bottom: 0;
   }
 }

@@ -1,9 +1,11 @@
 .site-title {
-  font-family: Montserrat;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 40px;
-  color: #434758;
+
+  @media (max-width: 350px) {
+    font-size: 28px;
+  }
 
   &_white {
     color: #fff;

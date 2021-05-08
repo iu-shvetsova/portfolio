@@ -113,9 +113,9 @@
 
   &__nav-wrap {
     position: absolute;
-    right: -400px;
+    right: -100%;
     top: 0;
-    height: 100%;
+    height: 100vh;
     background-color: #fff;
     width: 300px;
     z-index: 2;
@@ -167,17 +167,12 @@
   }
 
   &__nav-item {
-    font-family: Montserrat;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
+
     color: #7c90dd;
     transition-property: color, background-color;
     transition-duration: 0.2s;
     transition-timing-function: ease;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 37px;
     width: 100%;
     cursor: pointer;
 
@@ -188,8 +183,13 @@
   }
 
   &__nav-link {
+    display: block;
     color: inherit;
     text-decoration: none;
+    width: 100%;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 37px;
   }
 
   &__main {
@@ -261,7 +261,6 @@
     font-weight: normal;
     font-size: 48px;
     line-height: 57px;
-    color: #434758;
 
     @media (max-width: 600px) {
       font-size: 24px;
@@ -270,10 +269,8 @@
   }
 
   &__profession {
-    font-family: Montserrat;
     font-size: 16px;
     line-height: 19px;
-    color: #434758;
   }
 
   &__about-name,
@@ -309,11 +306,10 @@
   }
 
   &__info-title {
-    font-family: Montserrat;
     font-size: 48px;
     line-height: 50px;
     font-weight: 900;
-    color: #434758;
+
     text-transform: uppercase;
     margin-bottom: 20px;
     margin-top: 0;
@@ -341,11 +337,10 @@
   }
 
   &__info-slogan {
-    font-family: Montserrat;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    color: #434758;
+
     text-transform: uppercase;
     padding-left: 16px;
     padding-right: 16px;
@@ -466,12 +461,11 @@
   }
 
   &__info-works {
-    font-family: Montserrat;
     font-size: 16px;
     line-height: 19px;
-    color: #434758;
+    color: inherit;
     cursor: pointer;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease, color 0.2s ease;
     position: relative;
     z-index: 1;
 
@@ -480,7 +474,7 @@
     }
 
     &:hover {
-      opacity: 0.7;
+      color: #7c90dd;
     }
 
     &:active {
@@ -491,7 +485,6 @@
   &__scroll {
     transform: rotate(-90deg);
     color: #7c90dd;
-    font-family: Montserrat;
     font-weight: 200;
     font-size: 12px;
     line-height: 14px;
@@ -504,8 +497,6 @@
     bottom: 0;
 
     @media (max-width: 600px) {
-      font-size: 14px;
-      line-height: 18px;
       font-weight: 400;
     }
 

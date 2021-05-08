@@ -1,5 +1,4 @@
 .services {
-  font-family: Montserrat;
   position: relative;
   background: radial-gradient(
       135.31% 135.31% at 19.38% 143.57%,
@@ -150,13 +149,11 @@
   &__subitem {
     margin-bottom: 15px;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
+
     color: #ffffff;
   }
 
   &__price {
-    font-family: Montserrat;
     font-size: 25px;
     line-height: 28px;
     font-weight: 500;
@@ -175,8 +172,6 @@
   }
 
   &__footnote {
-    font-size: 14px;
-    line-height: 18px;
     color: #fff;
     margin-bottom: 0;
     margin-top: 10px;
@@ -187,7 +182,7 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    color: #434758;
+    color: inherit;
     text-decoration: none;
     padding: 10px 265px;
     background-color: #fff;

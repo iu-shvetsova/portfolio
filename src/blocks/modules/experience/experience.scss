@@ -44,6 +44,10 @@
     }
   }
 
+  &__wrap {
+    padding-left: 0;
+  }
+
   &__img-wrap {
     position: relative;
     min-width: 500px;
@@ -91,11 +95,10 @@
   }
 
   &__title {
-    font-family: Montserrat;
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
-    color: #434758;
+
     margin-top: 0;
     margin-bottom: 0;
 
@@ -149,7 +152,6 @@
   }
 
   &__text {
-    font-family: Montserrat;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
@@ -161,11 +163,10 @@
   }
 
   &__subtitle {
-    font-family: Montserrat;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-    color: #434758;
+
     text-align: center;
     margin-bottom: 35px;
     position: relative;
@@ -177,11 +178,34 @@
   }
 
   &__slider {
+    max-width: 810px;
+    margin: 0 auto;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__slide-img {
+    width: 372px;
+    height: 100%;
+  }
+
+  &__slide-description {
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin: 0;
+    padding: 0 10px;
+    transform: translateY(-80px);
+    text-align: center;
   }
 
   &__skills {
     position: relative;
-    overflow: hidden; // TODO Добавить обертку и задать ей фон
 
     &::after,
     &::before {
@@ -357,10 +381,6 @@
   }
 
   &__skills-text {
-    font-family: Montserrat;
-    font-size: 14px;
-    line-height: 18px;
-    color: #434758;
     margin-bottom: 20px;
     margin-top: 0;
 

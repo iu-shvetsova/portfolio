@@ -1,14 +1,13 @@
 .application-btn {
   border: 1px solid transparent;
-  font-family: Montserrat;
-  font-size: 14px;
-  line-height: 18px;
+  color: inherit;
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.2s ease, opacity 0.2s ease;
   cursor: pointer;
 
   &_blue {
+    border: none;
     color: #fff;
     padding: 21px 90px;
     background: radial-gradient(
@@ -23,7 +22,7 @@
     border: 1px solid #ced8ff;
     font-weight: 600;
     background-color: #fff;
-    color: #434758;
+
     padding: 12px 90px;
 
     &:hover {

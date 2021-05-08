@@ -1,5 +1,4 @@
 .my-functions {
-  font-family: Montserrat;
   position: relative;
   overflow: hidden;
 
@@ -62,12 +61,11 @@
   }
 
   &__title {
-    font-family: Montserrat;
     font-weight: 900;
     font-size: 48px;
     line-height: 48px;
     text-transform: uppercase;
-    color: #434758;
+
     margin-top: 52px;
     margin-bottom: 52px;
 
@@ -131,7 +129,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    color: #434758;
+
     margin: 0;
     padding-left: 8px;
 
@@ -167,8 +165,6 @@
   }
 
   &__text {
-    font-size: 14px;
-    line-height: 18px;
     color: #000000;
     margin: 0;
     padding-left: 15px;

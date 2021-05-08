@@ -1,0 +1,15 @@
+.slider-arrow {
+  background-image: url(/img/arrow-slider.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  position: absolute;
+  top: 40%;
+  right: 0;
+
+  &_prev {
+    transform: rotate(180deg);
+    left: 0;
+  }
+}

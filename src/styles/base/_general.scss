@@ -9,8 +9,27 @@ ul {
   padding: 0;
 }
 
-.wrapper {
-  overflow: hidden;
+body {
+  font-family: Montserrat, "Arial", sans-serif;
+  overflow-x: hidden;
+  font-size: 14px;
+  line-height: 18px;
+  color: #434758;
+  overflow-x: hidden;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.main-wrapper {
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+
+.width-container {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .container {
@@ -30,4 +49,23 @@ ul {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

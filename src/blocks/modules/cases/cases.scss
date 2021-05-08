@@ -1,6 +1,5 @@
 .cases {
   $root: &;
-  font-family: Montserrat;
 
   &__wrap {
     padding-top: 40px;
@@ -68,9 +67,6 @@
   }
 
   &__subtitle {
-    font-size: 14px;
-    line-height: 18px;
-    color: #434758;
     padding: 19px 0 19px 40px;
     margin: 0;
     width: 100%;
@@ -133,9 +129,6 @@
 
   &__text {
     display: none;
-    font-size: 14px;
-    line-height: 18px;
-    color: #434758;
   }
 
   &__more {
@@ -177,8 +170,6 @@
 
   &__more-link,
   &__more-list-title {
-    font-size: 14px;
-    line-height: 18px;
   }
 
   &__more-list-title {
@@ -190,7 +181,7 @@
   &__more-link {
     color: inherit;
     font-weight: 400;
-    color: #434758;
+
     transition: color 0.2s ease;
 
     &:hover {

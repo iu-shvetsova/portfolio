@@ -1,5 +1,6 @@
 .reviews {
   position: relative;
+  font-weight: 400;
 
   &::before {
     content: "";
@@ -14,11 +15,74 @@
   }
 
   &__wrap {
-    padding-right: 100px;
-    padding-top: 40px;
-    padding-bottom: 155px;
+    padding: 40px 0 155px 0;
     background-image: url(/img/reviews-background.svg);
     background-position: top center;
     background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__title {
+    margin-left: 100px;
+  }
+
+  &__container {
+    max-width: 1100px;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+
+  &__slider-list {
+    list-style: none;
+  }
+
+  &__slider-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    max-width: 308px;
+  }
+
+  &__name,
+  &__description {
+    font-style: italic;
+  }
+
+  &__description {
+    padding: 15px 40px;
+    background: #ffffff;
+    box-shadow: 0px 0px 40px rgba(32, 131, 89, 0.2);
+    border-radius: 8px;
+    max-width: 305px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    margin: 0;
+  }
+
+  &__img-wrap {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  &__reviews__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
